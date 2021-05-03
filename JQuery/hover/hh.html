@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honer In Out</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var x=$('img').attr('src');
+        $('img').hover(function(){
+        var temp=$(this).attr( data-alt-src);
+        $(this).attr('src',temp);
+        },function(){
+            $(this).attr('src',x);
+
+      });
+    })
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Hover In Out</h1>
+      <img src="JavaScript.png" data-alt-src="sqlite.png" temp="" />
+      <img src="jQuery.png" data-alt-src="mongodb.png" temp="" />
+      <img src="CSS.png" data-alt-src="iOs-Swift.png" temp="" />
+      <img src="python.png" data-alt-src="MEAN.png" temp="" />
+    </main>
+  </body>
+</html>

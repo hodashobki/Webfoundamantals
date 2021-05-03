@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    width: 970px;
+    background-color: white;
+}
+section{
+    background-color: rgb(36,80,118);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 450px;
+}
+form{
+    width: 230px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(68,68,68);
+    padding: 14px;
+    margin: 10px;
+}
+input[type=text]{
+    height: 25px;
+}
+input[type=submit]{
+    background-color:rgb(36,80,118) ;
+    color: white;
+    border-radius:4px;
+    box-shadow: 2px 1px white inset;
+    width: 40px;
+    height: 30px;
+}
+h5{
+    margin-left: 40px;
+    color: white;
+}
+h5 a{
+    color:rgb(155,147,35);
+    padding: 2px;
+}
+h5 a:first-child{
+    border-right: 1px solid black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(67,125,173);
+    box-shadow: 1px 1px 2px black;
+    border-radius: 4px;
+    margin: 25px;
+    padding: 15px;
+}
+nav a{
+    color: white;
+    font-family:sans-serif;
+    border: 0px;
+    text-decoration: none;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    color: rgb(180,166,72);
+}
+ul {
+    width: 420px;
+    margin: 15px;
+    list-style-type: none;
+    text-align: center;
+}
+ul a{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+}
+p{
+    color: white;
+    text-align: center;
+}
+h4{
+    color: rgb(218,189,60);
+    margin-left:100px;
+    padding: 4px;
+    text-align: center;
+}
+h5{
+    margin-left: 100px;
+    padding: 4px;
+    text-align: center;
+}/* sec2*/
+section.sec2{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    text-align: center;
+   
+}
+section.sec2 div{
+    margin: 8px;
+    width: 430px;
+    border-top: 4px solid rgb(115,167,213);
+}
+section.sec2 h4{
+    color: black;
+}
+section.sec2 span ,li{
+    color:rgb(173,204,230)
+}
+section.sec2 p{
+    color: rgb(59,59,59);
+}
+section.sec2 li{
+    list-style-type: square;
+    
+}
+section.sec2 ul {
+    padding-left: 30px;
+    text-align: center;
+}
+::marker{
+    color: black;
+}
+footer{
+    background: hsla(208, 54%, 42%, 1);
+
+    background: linear-gradient(180deg, hsla(208, 54%, 42%, 1) 0%, hsla(207, 54%, 42%, 0.8) 99%, hsla(300, 16%, 83%, 0.3) 100%, hsla(208, 54%, 34%, 1) 100%);
+    
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+footer h4{
+    color: rgb(122,173,217);
+    padding: 20px;
+}
+h6{
+    color: rgb(122,173,217);
+}

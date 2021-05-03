@@ -1,0 +1,15 @@
+main{
+    width: 900px;
+    height: auto;
+    background-color: rgb(179, 179, 218);
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+button{
+    width: 150px;
+    height: 70px;
+    background-color: green;
+    color: white;
+}

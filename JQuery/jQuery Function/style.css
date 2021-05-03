@@ -1,0 +1,30 @@
+.contain{
+    width: 1000px;
+    height: 550px;
+    padding: 5px;
+    margin: 5px;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
+img{
+    width: 500px;
+    height: 200px;
+}
+p{
+    background: cornsilk;
+    width: 500px;
+    height: 40px;
+    display: none;
+}
+h3{
+    height: 20px;
+    width: 100px;
+    background-color: darkkhaki;
+}
+.par1{
+    color:black;
+
+}
+.bk{
+    background-color: darksalmon;
+}

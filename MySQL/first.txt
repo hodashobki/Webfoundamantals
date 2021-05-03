@@ -1,0 +1,95 @@
+1-
+//
+select countries.name , languages.language,languages.percentage 
+from countries 
+join languages on countries.id= languages.country_id
+where languages.language='Slovene'
+order by languages.percentage desc
+
+;//////
+2-
+
+///
+select countries.name,COUNT( cities.name)
+from countries
+join cities on countries.id= cities.country_id
+group by countries.name
+order by COUNT( cities.name) desc
+
+
+///////
+3-
+//
+select cities.name,countries.name
+from countries
+join cities on countries.id= cities.country_id
+where countries.name ="mexico" and cities.population>500000
+order by cities.population desc
+////////
+4-
+//
+
+select languages.language,countries.name, languages.percentage
+from countries
+join languages on languages.country_id=countries.id
+where languages.percentage>89.0
+order by languages.percentage desc;
+
+///////
+5-
+///
+
+select name ,surface_area,population
+from countries
+where population>100000 and surface_area<501
+
+
+\\\\
+6-
+/////
+select name ,government_form,capital,life_expectancy
+from countries
+where government_form="Constitutional Monarchy" and capital>200 and life_expectancy>75
+//////
+7-
+////
+select cities.name,countries.name, cities.district,cities.population
+from countries
+join cities on countries.id= cities.country_id
+where countries.name="Argentina" and cities.district="Buenos Aires " and cities.population>500000;
+////
+8-
+////
+select region, COUNT(id)
+from countries
+group by region
+order by COUNT(id) desc
+
+
+/////////////////
+npt included
+SELECT  customer.first_name, customer.last_name, customer.email, address.address 
+FROM customer
+JOIN address ON customer.address_id = address.address_id 
+WHERE customer.store_id = 1 AND (address.city_id=1 or address.city_id=42 or address.city_id=312 or address.city_id=459);
+//////
+SELECT MAX (mycount) 
+FROM (SELECT agent_code,COUNT(agent_code) mycount 
+FROM orders 
+GROUP BY agent_code);
+SELECT  max(c) FROM (SELECT count(friendships.friend_id)  c,users.first_name, users.last_name,
+user2.first_name as friend_first_name,user2.last_name as friend_last_name
+from users join friendships on users.id = friendships.user_id
+left join users as user2 on user2.id = friendships.friend_id
+group by users.id)
+
+//////this worked
+SELECT count(friendships.friend_id),users.first_name,users.last_name,user2.first_name,user2.last_name 
+FROM users JOIN friendships ON users.id=friendships.user_id 
+LEFT JOIN users as user2 ON user2.id = friendships.friend_id
+group by users.id 
+order by count(friendships.friend_id) desc
+limit 1
+
+
+

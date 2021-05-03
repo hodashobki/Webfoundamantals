@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            $(".tog").click(function(){
+                $("img").toggle();
+            })
+            $(".par").click(function(){
+                $("p").fadeIn();
+            })
+            $(".pa").click(function(){
+                $("p").fadeOut();
+            })
+            $(".hh").click(function(){
+                $("h3").slideToggle();
+            })
+            $(".op").click(function(){
+                $("span").addClass("bk");
+            })
+        
+            $(".bf").click(function(){
+                $("h4").before("Don't");
+            })
+            $(".af").click(function(){
+                $("h4").after("Why not");
+            })
+            $(".ap").click(function(){
+                $("h4").append(" or not");
+            })
+            $(".ht").click(function(){
+                $("h4").html("<h5> make change</h5>");
+            })
+            $(".at").click(function(){
+                $("h3").attr("backgroundColor","red");
+            })
+            $(".va").click(function(){
+                $("input:text").val("huda");
+            })
+            $(".tx").click(function(){
+                $("article").text("Khalil Khalil");
+            })
+
+
+         })
+        </script>
+</head>
+<body>
+    <div class="contain">
+        <h1>Jquery functions</h1>
+        <img src="a1c1a1a36c9e4ff8adcb958c4276f28d-jumbo.jpg" alt="">
+        <span class="par1">country House</span>
+        <h3>slide toggle</h3>
+        <h4>Change all</h4>
+        <p>NOTE!  The jQuery website is no longer hosting the library that we use in the video!! </p>
+        <i>name:<input type="text" name ="user"></i>
+        <article>The $ is how we access the whole jQuery library</article>
+    </div>
+    <button class="tog">The img will toggle</button>
+    <button class="par">fadein</button>
+    <button class="pa" >fadeout</button>
+    <button class="hh">slide toggle</button>
+    <button class="op">AddClass</button>
+    <button class ="bf"> before</button>
+    <button class ="af"> after</button>
+    <button class ="ap"> append</button>
+    <button class ="ht">hmml</button>
+    <button class ="at">attribute</button>
+    <button class ="va">value</button>
+    <button class ="tx">text</button>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+     width: 1000px;
+     background: hsla(340, 20%, 17%, 1);
+     background: radial-gradient(circle, hsla(340, 20%, 17%, 1) 0%, hsla(330, 11%, 39%, 1) 100%);
+     
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: hsla(0, 0%, 95%, 1);
+    background: linear-gradient(180deg, hsla(0, 0%, 95%, 1) 0%, hsla(0, 0%, 99%, 1) 83%);
+}
+h1{
+    font-family:cursive ;
+    padding: 6px;
+}
+h3{
+    padding: 20px;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+img{
+    width: 470px;
+    border: 5px solid grey;
+    margin: 5px;
+}
+aside{
+    margin: 5px;
+    background-color: white;
+}
+h4{
+color: white;
+background: hsla(252, 5%, 60%, 1);
+background: linear-gradient(135deg, hsla(252, 5%, 60%, 1) 31%, hsla(240, 4%, 67%, 0.9) 46%);
+height: 35px;
+padding: 5px;
+font-size: 18px;
+}
+#pa p , a{
+    padding: 10px;
+}
+#pa a{
+    color:rgb(17,24,81);
+}
+section{
+    display: flex; 
+    justify-content: space-between;
+
+    
+}
+#pho{
+    width: 320px;
+    background: hsla(300, 17%, 92%, 1);
+
+background: radial-gradient(circle, hsla(300, 17%, 92%, 1) 46%, hsla(300, 18%, 87%, 1) 80%, hsla(300, 16%, 83%, 0.3) 100%);
+    padding-bottom:10px;
+    display: flex;
+    flex-direction: column;
+
+}
+#pho p{
+    padding: 5px;
+    text-align:left;
+}
+#pho img{
+    width: 315px;
+    border: transparent;
+    padding: 0px;
+}
+/* 1*/
+#pho1{
+    width: 320px;
+    background: hsla(300, 17%, 92%, 1);
+
+background: radial-gradient(circle, hsla(300, 17%, 92%, 1) 46%, hsla(300, 18%, 87%, 1) 80%, hsla(300, 16%, 83%, 0.3) 100%);
+    padding-bottom:10px;
+    display: flex;
+    flex-direction: column;
+
+}
+#pho1 p{
+    padding: 5px;
+    text-align:left;
+}
+#pho1 img{
+    width: 315px;
+    border: transparent;
+    padding: 0px;
+}/*2*/
+#pho2{
+    width: 320px;
+    background: hsla(300, 17%, 92%, 1);
+
+background: radial-gradient(circle, hsla(300, 17%, 92%, 1) 46%, hsla(300, 18%, 87%, 1) 80%, hsla(300, 16%, 83%, 0.3) 100%);
+    padding-bottom:10px;
+    display: flex;
+    flex-direction: column;
+
+}
+#pho2 p{
+    padding: 5px;
+    text-align:left;
+}
+#pho2 img{
+    width: 315px;
+    border: transparent;
+    padding: 0px;
+}
+div.wid{
+    height: 400px;
+}
+#small img{
+width: 50px;
+border: transparent;
+}
+#small1 img{
+width: 50px;
+border: transparent;
+    }
+ #small2 img{
+ width: 50px;
+ border: transparent;
+        }
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+input[type=submit]{
+    color: white;
+    background-color: rgb(64,125,97);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+footer{
+    background: hsla(0, 0%, 95%, 1);
+    background: linear-gradient(180deg, hsla(0, 0%, 95%, 1) 0%, hsla(0, 0%, 99%, 1) 83%);
+    height: 44px;
+   
+}
+footer img{
+    width: 15px;
+    border: transparent;
+}
+footer h6{
+    text-align: center;
+}
+footer a{
+    color:rgb(17,24,81);
+    font-size: smaller;
+}
+div.foot{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-left:285px;
+}

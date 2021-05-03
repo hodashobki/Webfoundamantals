@@ -1,0 +1,80 @@
+FRIENDSHIPS
+
+
+____1______________
+SELECT users.first_name,users.last_name,user2.first_name,user2.last_name , user2.last_name as friend_last_name
+FROM users JOIN friendships
+ ON users.id=friendships.user_id 
+LEFT JOIN users as user2  
+ON user2.id = friendships.friend_id
+
+
+_________________________________________________
+   2
+_______________________
+
+SELECT users.first_name,user2.first_name,user2.last_name 
+FROM users JOIN friendships
+ ON users.id=friendships.user_id 
+LEFT JOIN users as user2  
+ON user2.id = friendships.friend_id
+where users.first_name="Eli"
+__________________________
+        3   
+___________________________
+SELECT count(friendships.friend_id)
+FROM users JOIN friendships
+ ON users.id=friendships.user_id 
+LEFT JOIN users as user2  
+ON user2.id = friendships.friend_id
+______________
+4
+___________
+SELECT count(friendships.friend_id),users.first_name,
+users.last_name,user2.first_name,user2.last_name 
+FROM users JOIN friendships ON users.id=friendships.user_id 
+LEFT JOIN users as user2 ON user2.id = friendships.friend_id
+group by users.id 
+order by count(friendships.friend_id) desc
+limit 1
+_____________________________
+          5
+__________________________________
+insert into users 
+values (default,"John", "Magy", now(), now())
+
+
+insert into friendships
+values (8,6,2, now(), now())
+insert into friendships
+values (9,6,3, now(), now())
+insert into friendships
+values (10,6,4, now(), now())
+
+
+
+
+_____________________________
+          6
+________________________________
+SELECT users.first_name,
+users.last_name,user2.first_name,user2.last_name 
+FROM users JOIN friendships ON users.id=friendships.user_id 
+LEFT JOIN users as user2 ON user2.id = friendships.friend_id
+where users.first_name="Eli"
+order by user2.first_name 
+_______________________________
+7
+_________
+
+delete from users
+where users.id=5
+_______________________
+   8
+___________________
+select users.first_name,user2.first_name
+from users
+join friendships
+on users.id=friendships.user_id
+left join users as user2 
+on user2.id=friendships.friend_id

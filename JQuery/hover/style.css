@@ -1,0 +1,14 @@
+body{
+    background-color: azure;
+    border: 2px solid blue;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+}

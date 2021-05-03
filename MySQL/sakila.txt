@@ -1,0 +1,89 @@
+1-
+//
+select customer.first_name,customer.last_name,customer.email
+from address
+join customer on customer.address_id=address.address_id
+join city
+on address.city_id=city.city_id
+where city.city_id=312;
+//
+2-
+//select film.title,film.description,film.release_year,film.special_features,film.rating,category.name
+from film_category
+join  category on category.category_id=film_category.category_id
+join film on film.film_id=film_category.film_id
+where category.name ="comedy"
+
+
+/////
+3-. What query would you run to get all the films joined by actor_id=5? Your query should return the actor id, actor name, film title, description, and release year.
+////
+SELECT a.actor_id,concat(a.first_name,"",a.last_name)as Actor_name,
+ f.title,f.description,f.release_year
+from film f
+join film_actor
+using (film_id)
+join actor a
+using (actor_id)
+
+///////////////////////
+5-What query would you run toget all the customers instore_id = 1 and inside thesecities (1, 42, 312 and 459)?Your query should return
+customer first name, last
+name, email, and address. 
+////
+SELECT  c.first_name,c.last_name,c.email,a.address,ci.city_id
+FROM customer c
+join store s
+using (store_id)
+join address a
+on s.address_id=a.address_id
+join city ci
+on a.city_id=ci.city_id
+where store_id=1 
+
+///
+4-What query would you run toget all the films with a "rating =G" and "special feature =behind the scenes", joined byactor_id = 15? Your queryshould return the film title,
+description, release year,rating, and special feature.Hint: You may use LIKEfunction in getting the 'behindthe scenes' part.
+///
+ SELECT f.title,f.description,f.release_year,f.rating,f.special_features
+FROM film f
+join film_actor 
+using (film_id) 
+where rating="G" and special_features like "%behind the scenes%" and actor_id=15
+
+////
+6-
+///
+select f.film_id,f.title,fa.actor_id,concat(a.first_name,"",a.last_name) as actor_name
+from film f
+join film_actor fa
+using(film_id)
+join actor a
+using (actor_id)
+where film_id=369
+///
+7-
+///
+SELECT f.title,f.description,f.release_year,
+f.rating,f.special_features,ca.name
+FROM film f
+join film_category fc
+using(film_id)
+join category ca
+using (category_id)
+where ca.name="Drama" and rental_rate=2.99 
+
+///
+8-SELECT f.title,f.description,f.release_year,f.rating, a.actor_id,
+f.special_features,category.name
+from category
+join film_category 
+using (category_id)
+join film f
+using (film_id)
+join film_actor
+using (film_id)
+join actor a
+using (actor_id)
+where category.name="Action" and concat(a.first_name," ",a.last_name)="SANDRA KILMER"
+////
